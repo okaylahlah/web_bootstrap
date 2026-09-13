@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดสินค้า - MyStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MyStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก/สินค้า</a></li>
+                <li><a href="menu.html">เมนูหมวดหมู่</a></li>
+                <li><a href="product-detail.html" class="active">รายละเอียดสินค้า</a></li>
+                <li><a href="register.html" class="btn-nav">ลงทะเบียน</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <!-- ส่วนสินค้าหลักที่เลือกดู -->
+        <div class="detail-card">
+            <div class="detail-image">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80" alt="หูฟังไร้สาย">
+            </div>
+            <div class="detail-content">
+                <span class="category">Gadget</span>
+                <h2>หูฟังไร้สาย Premium Sound</h2>
+                <p class="price-tag">฿2,590</p>
+                <p class="detail-desc">
+                    สัมผัสประสบการณ์เสียงขั้นสุดยอดด้วยระบบ Active Noise Cancelling ตัดเสียงรบกวนรอบข้างได้อย่างมีประสิทธิภาพ 
+                    พร้อมดีไซน์เรียบหรู น้ำหนักเบา สวมใส่สบายตลอดวัน
+                </p>
+                <ul class="specs-list">
+                    <li><strong>ระยะเวลาใช้งาน:</strong> สูงสุด 30 ชั่วโมง</li>
+                    <li><strong>การเชื่อมต่อ:</strong> Bluetooth 5.2 / Type-C</li>
+                    <li><strong>การรับประกัน:</strong> ศูนย์ไทย 1 ปีเต็ม</li>
+                </ul>
+                <div class="action-buttons">
+                    <button class="btn-submit">เพิ่มลงตะกร้าสินค้า</button>
+                    <a href="index.html" class="btn-secondary">กลับหน้าหลัก</a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- ส่วน Grid สินค้าแนะนำ 9 ชิ้น -->
+        <h2 class="section-title">สินค้าแนะนำอื่นๆ (9 รายการ)</h2>
+        <div class="product-grid">
+            
+            <!-- ชิ้นที่ 1 -->
+            <div class="product-card">
+                <div class="badge">ขายดี</div>
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="หูฟังไร้สาย">
+                <div class="product-info">
+                    <span class="category">Gadget</span>
+                    <h3 class="product-title">หูฟังไร้สาย Premium</h3>
+                    <p class="description">เสียงคมชัด ตัดเสียงรบกวน แบตอยู่นาน 30 ชม.</p>
+                    <div class="price-container">
+                        <span class="price">฿2,590</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ชิ้นที่ 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80" alt="Smart Watch">
+                <div class="product-info">
+                    <span class="category">Smart Home</span>
+                    <h3 class="product-title">Smart Watch Fitness</h3>
+                    <p class="description">ตรวจจับอัตราการเต้นหัวใจ และนับก้าวเดิน</p>
+                    <div class="price-container">
+                        <span class="price">฿1,890</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ชิ้นที่ 3 -->
+            <div class="product-card">
+                <div class="badge discount">-15%</div>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80" alt="รองเท้าผ้าใบ">
+                <div class="product-info">
+                    <span class="category">Fashion</span>
+                    <h3 class="product-title">รองเท้าผ้าใบ Sport</h3>
+                    <p class="description">สวมใส่สบาย น้ำหนักเบา เหมาะสำหรับการวิ่ง</p>
+                    <div class="price-container">
+                        <span class="price">฿1,690</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ชิ้นที่ 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=500&q=80" alt="น้ำหอม">
+                <div class="product-info">
+                    <span class="category">Beauty</span>
+                    <h3 class="product-title">น้ำหอม Luxury Perfume</h3>
+                    <p class="description">กลิ่นหอมติดทนนาน สดชื่นเรียบหรูตลอดวัน</p>
+                    <div class="price-container">
+                        <span class="price">฿3,200</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ชิ้นที่ 5 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&q=80" alt="กล้องโพลารอยด์">
+                <div class="product-info">
+                    <span class="category">Camera</span>
+                    <h3 class="product-title">กล้องโพลารอยด์ Vintage</h3>
+                    <p class="description">ถ่ายปุ๊บได้รูปปั๊บ ดีไซน์คลาสสิกพกพาสะดวก</p>
+                    <div class="price-container">
+                        <span class="price">฿2,990</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ชิ้นที่ 6 -->
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/3b/d2/14/3bd214f2688974a161eeb77ad0a602c1.jpg" alt="คีย์บอร์ด">
+                <div class="product-info">
+                    <span class="category">Gaming</span>
+                    <h3 class="product-title">Mechanical Keyboard</h3>
+                    <p class="description">คีย์บอร์ดเกมมิ่ง ไฟ RGB ปรับระดับได้</p>
+                    <div class="price-container">
+                        <span class="price">฿2,150</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ชิ้นที่ 7 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&q=80" alt="แว่นกันแดด">
+                <div class="product-info">
+                    <span class="category">Fashion</span>
+                    <h3 class="product-title">แว่นกันแดด Classic Sunglasses</h3>
+                    <p class="description">ป้องกันรังสี UV400 ดีไซน์ทันสมัยเข้ากับทุกทรงหน้า</p>
+                    <div class="price-container">
+                        <span class="price">฿890</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ชิ้นที่ 8 -->
+            <div class="product-card">
+                <div class="badge">มาใหม่</div>
+                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80" alt="แก้วน้ำเก็บอุณหภูมิ">
+                <div class="product-info">
+                    <span class="category">Home</span>
+                    <h3 class="product-title">แก้วเก็บความเย็น Stainless</h3>
+                    <p class="description">เก็บความเย็นได้นาน 24 ชั่วโมง สแตนเลสอย่างดี</p>
+                    <div class="price-container">
+                        <span class="price">฿550</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ชิ้นที่ 9 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&q=80" alt="สมุดโน้ต">
+                <div class="product-info">
+                    <span class="category">Stationery</span>
+                    <h3 class="product-title">สมุดโน้ตปกหนัง Minimal</h3>
+                    <p class="description">กระดาษถนอมสายตาอย่างดี เหมาะแก่การจดบันทึก</p>
+                    <div class="price-container">
+                        <span class="price">฿290</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
