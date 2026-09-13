@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - แคตตาล็อกสินค้า (Grid System)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- แถบเมนูนำทาง (Navbar) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MyStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">หน้าแรก/สินค้า</a></li>
+                <li><a href="menu.html">เมนูหมวดหมู่</a></li>
+                
+                <!-- Dropdown สำหรับเข้าสู่ระบบ (Login) -->
+                <li class="dropdown">
+                    <button class="btn-dropdown" id="loginDropdownBtn">เข้าสู่ระบบ ▾</button>
+                    <div class="dropdown-menu" id="loginDropdownMenu">
+                        <form class="login-form">
+                            <h3>เข้าสู่ระบบ</h3>
+                            <div class="form-group">
+                                <label for="login-email">อีเมล</label>
+                                <input type="email" id="login-email" placeholder="example@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="login-password">รหัสผ่าน</label>
+                                <input type="password" id="login-password" placeholder="••••••••" required>
+                            </div>
+                            <button type="submit" class="btn-submit">เข้าสู่ระบบ</button>
+                            <div class="login-footer">
+                                <span>ยังไม่มีบัญชี?</span> <a href="register.html">ลงทะเบียนที่นี่</a>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+                <li><a href="register.html" class="btn-nav">ลงทะเบียน</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>แคตตาล็อกสินค้าออนไลน์</h1>
+        <p>แบบฝึกหัดที่ 9 ออกแบบหน้าแคตตาล็อกสินค้า ด้วย Grid System</p>
+    </header>
+
+    <main class="container">
+        
+        <!-- ส่วนฟอร์มสำหรับเพิ่มสินค้าใหม่ -->
+        <section class="add-product-section">
+            <h2>+ เพิ่มสินค้าใหม่เข้าแคตตาล็อก</h2>
+            <form id="addProductForm" class="add-product-grid-form">
+                <div class="form-group">
+                    <label for="name">ชื่อสินค้า</label>
+                    <input type="text" id="name" placeholder="เช่น หูฟังไร้สาย" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">หมวดหมู่</label>
+                    <select id="category" required>
+                        <option value="Gadget">Gadget</option>
+                        <option value="Fashion">Fashion</option>
+                        <option value="Smart Home">Smart Home</option>
+                        <option value="Beauty">Beauty</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">ราคา (บาท)</label>
+                    <input type="number" id="price" placeholder="เช่น 1500" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="image">ลิงก์รูปภาพ (URL)</label>
+                    <input type="url" id="image" placeholder="https://..." required>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="desc">รายละเอียดสินค้า</label>
+                    <input type="text" id="desc" placeholder="อธิบายคุณสมบัติสินค้า..." required>
+                </div>
+
+                <div class="form-group full-width">
+                    <button type="submit" class="btn-submit">+ บันทึกและเพิ่มสินค้า</button>
+                </div>
+            </form>
+        </section>
+
+        <hr class="divider">
+
+        <!-- ส่วน Grid แสดงรายการสินค้า -->
+        <h2 class="section-title">รายการสินค้าทั้งหมด</h2>
+        <div class="product-grid" id="productGrid">
+            
+            <div class="product-card">
+                <div class="badge">ขายดี</div>
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="หูฟังไร้สาย">
+                <div class="product-info">
+                    <span class="category">Gadget</span>
+                    <h3 class="product-title">หูฟังไร้สาย Premium Sound</h3>
+                    <p class="description">เสียงคมชัด ตัดเสียงรบกวน แบตเตอรี่ใช้งานได้นานถึง 30 ชั่วโมง</p>
+                    <div class="price-container">
+                        <span class="price">฿2,590</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80" alt="นาฬิกา Smart Watch">
+                <div class="product-info">
+                    <span class="category">Smart Home</span>
+                    <h3 class="product-title">Smart Watch Fitness Tracker</h3>
+                    <p class="description">ตรวจจับการเต้นของหัวใจ วัดก้าวเดิน และรองรับการออกกำลังกายทุกรูปแบบ</p>
+                    <div class="price-container">
+                        <span class="price">฿1,890</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge discount">-15%</div>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80" alt="รองเท้าผ้าใบ">
+                <div class="product-info">
+                    <span class="category">Fashion</span>
+                    <h3 class="product-title">รองเท้าผ้าใบ Sport Runner</h3>
+                    <p class="description">สวมใส่สบาย นุ่มเบา เหมาะสำหรับการวิ่งและการสวมใส่ในชีวิตประจำวัน</p>
+                    <div class="price-container">
+                        <span class="price">฿1,690</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Script สำหรับคุมระบบ เพิ่มสินค้า และ เปิด/ปิด Dropdown Login -->
+    <script>
+        // 1. สคริปต์เปิด-ปิด Dropdown Login
+        const loginDropdownBtn = document.getElementById('loginDropdownBtn');
+        const loginDropdownMenu = document.getElementById('loginDropdownMenu');
+
+        loginDropdownBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            loginDropdownMenu.classList.toggle('show');
+        });
+
+        // ปิด Dropdown เมื่อคลิกพื้นที่อื่นนอกเมนู
+        window.addEventListener('click', function(e) {
+            if (!loginDropdownMenu.contains(e.target) && e.target !== loginDropdownBtn) {
+                loginDropdownMenu.classList.remove('show');
+            }
+        });
+
+        // 2. สคริปต์เพิ่มสินค้าใหม่
+        const form = document.getElementById('addProductForm');
+        const productGrid = document.getElementById('productGrid');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const category = document.getElementById('category').value;
+            const price = parseFloat(document.getElementById('price').value).toLocaleString();
+            const image = document.getElementById('image').value;
+            const desc = document.getElementById('desc').value;
+
+            const newCard = document.createElement('div');
+            newCard.className = 'product-card';
+            newCard.innerHTML = `
+                <div class="badge" style="background-color: #2563eb;">มาใหม่</div>
+                <img src="${image}" alt="${name}" onerror="this.src='https://via.placeholder.com/500x300?text=No+Image'">
+                <div class="product-info">
+                    <span class="category">${category}</span>
+                    <h3 class="product-title">${name}</h3>
+                    <p class="description">${desc}</p>
+                    <div class="price-container">
+                        <span class="price">฿${price}</span>
+                        <button class="btn-add">เพิ่มลงตะกร้า</button>
+                    </div>
+                </div>
+            `;
+
+            productGrid.prepend(newCard);
+            form.reset();
+            alert('เพิ่มสินค้าเรียบร้อยแล้ว!');
+        });
+    </script>
+
+</body>
+</html>

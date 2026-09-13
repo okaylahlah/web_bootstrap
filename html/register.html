@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียนสมาชิก - MyStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MyStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก/สินค้า</a></li>
+                <li><a href="menu.html">เมนูหมวดหมู่</a></li>
+                <li><a href="register.html" class="active btn-nav">ลงทะเบียน</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- การ์ดฟอร์มลงทะเบียน -->
+        <div class="form-container">
+            <h2>สมัครสมาชิก</h2>
+            <p>กรอกข้อมูลด้านล่างเพื่อสร้างบัญชีผู้ใช้ใหม่</p>
+
+            <form action="#" method="POST" class="register-form">
+                <div class="form-group">
+                    <label for="fullname">ชื่อ-นามสกุล</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="นายสมชาย ใจดี" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">อีเมล</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">รหัสผ่าน</label>
+                    <input type="password" id="password" name="password" placeholder="ตั้งรหัสผ่าน 8 ตัวอักษรขึ้นไป" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์</label>
+                    <input type="tel" id="phone" name="phone" placeholder="08X-XXX-XXXX" required>
+                </div>
+
+                <button type="submit" class="btn-submit">ยืนยันการลงทะเบียน</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

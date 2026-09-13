@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <!---menu-->
+    <div id="menu-container"></div>
+    
+    <!---content-->
+    <div class="alert alert-success" role="alert">หน้าหลัก</div>
+    <div class="alert alert-success" role="alert">Arnon Meesri</div>
+
+    <div class="mb-4 text-end">
+        <a class="btn btn-outline-info" href="https://www.google.com/">google</a>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-4 bg-primary-subtle">
+            แมว
+            <img src="/web_bootstrap/img/500iq.jpg" width="100%">
+          </div>
+
+          <div class="col-sm-4 bg-warning-subtle">
+            แมว
+            <img src="cat1.jpg" width="100%">
+          </div>
+          
+          <div class="col-sm-4 bg-info-subtle">
+            <h2>ลงทะเบียน</h2>
+            <form>
+                <div class="mb-3">
+                  <label for="E-mail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="E-mail1">
+                </div>
+
+                <div class="mb-3">
+                  <label for="pw" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="pw">
+                </div>
+
+                <div class="mb-3">
+                    <label for="Fristname" class="form-label">Firstname</label>
+                    <input type="text" class="form-control" id="Fristname" required placeholder="name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="Lastname" class="form-label">Lastname</label>
+                    <input type="text" class="form-control" id="Lastname" required placeholder="name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="Telephone" class="form-label">Telephone</label>
+                    <input type="text" class="form-control" id="Telephone" required placeholder="xxxxxx-xxxxx">
+                </div>
+
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>กดเพื่อเลือกจังหวัด</option>
+                        <option value="Rayong">Rayong</option>
+                        <option value="choburi">chonburi</option>
+                        <option value="Pattaya">Pattaya</option>
+                    </select>
+                </div>
+
+                <div class="mb-4 text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-warning">Cancel</button>
+                </div>
+            </form>
+          </div> 
+        </div>
+    </div>
+
+    <!-- ย้าย Script เข้ามาไว้ก่อนปิด body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/web_bootstrap/menu.js" > </script>
+</body>
+</html>
