@@ -47,90 +47,46 @@
         </div>
     </nav>
 
-    <!-- Banner รูปภาพเดียว -->
-<!-- Banner Image Slider -->
-<section class="banner-slider">
-    <div class="slides-container">
-        <!-- Slide 1 -->
-        <div class="slide active">
-            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&q=80" alt="โปรโมชั่นพิเศษ">
-            <div class="banner-text">
-                <h2>Mega Sale ลดสูงสุด 50%</h2>
-                <p>ต้อนรับฤดูกาลช้อปปิ้ง อุปกรณ์ไอทีและแฟชั่นราคาสุดพิเศษ</p>
+    <!-- Banner Image Slider -->
+    <section class="banner-slider">
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&q=80" alt="โปรโมชั่นพิเศษ">
+                <div class="banner-text">
+                    <h2>Mega Sale ลดสูงสุด 50%</h2>
+                    <p>ต้อนรับฤดูกาลช้อปปิ้ง อุปกรณ์ไอทีและแฟชั่นราคาสุดพิเศษ</p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80" alt="สินค้ามาใหม่">
+                <div class="banner-text">
+                    <h2>New Arrivals สินค้ามาใหม่</h2>
+                    <p>อัปเดตเทรนด์แฟชั่นและแกดเจ็ตยอดนิยมก่อนใคร</p>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=1200&q=80" alt="ส่งฟรี">
+                <div class="banner-text">
+                    <h2>Free Shipping จัดส่งฟรี</h2>
+                    <p>เมื่อช้อปสินค้าครบ 990 บาทขึ้นไปทั่วประเทศ</p>
+                </div>
             </div>
         </div>
-        <!-- Slide 2 -->
-        <div class="slide">
-            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80" alt="สินค้ามาใหม่">
-            <div class="banner-text">
-                <h2>New Arrivals สินค้ามาใหม่</h2>
-                <p>อัปเดตเทรนด์แฟชั่นและแกดเจ็ตยอดนิยมก่อนใคร</p>
-            </div>
-        </div>
-        <!-- Slide 3 -->
-        <div class="slide">
-            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=1200&q=80" alt="ส่งฟรี">
-            <div class="banner-text">
-                <h2>Free Shipping จัดส่งฟรี</h2>
-                <p>เมื่อช้อปสินค้าครบ 990 บาทขึ้นไปทั่วประเทศ</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <header class="header">
         <h1>แคตตาล็อกสินค้าออนไลน์</h1>
-        <p>แบบฝึกหัดที่ 9 ออกแบบหน้าแคตตาล็อกสินค้า ด้วย Grid System</p>
     </header>
 
     <main class="container">
-        
-        <!-- ส่วนฟอร์มสำหรับเพิ่มสินค้าใหม่ -->
-        <section class="add-product-section">
-            <h2>+ เพิ่มสินค้าใหม่เข้าแคตตาล็อก</h2>
-            <form id="addProductForm" class="add-product-grid-form">
-                <div class="form-group">
-                    <label for="name">ชื่อสินค้า</label>
-                    <input type="text" id="name" placeholder="เช่น หูฟังไร้สาย" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="category">หมวดหมู่</label>
-                    <select id="category" required>
-                        <option value="Gadget">Gadget</option>
-                        <option value="Fashion">Fashion</option>
-                        <option value="Smart Home">Smart Home</option>
-                        <option value="Beauty">Beauty</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="price">ราคา (บาท)</label>
-                    <input type="number" id="price" placeholder="เช่น 1500" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="image">ลิงก์รูปภาพ (URL)</label>
-                    <input type="url" id="image" placeholder="https://..." required>
-                </div>
-
-                <div class="form-group full-width">
-                    <label for="desc">รายละเอียดสินค้า</label>
-                    <input type="text" id="desc" placeholder="อธิบายคุณสมบัติสินค้า..." required>
-                </div>
-
-                <div class="form-group full-width">
-                    <button type="submit" class="btn-submit">+ บันทึกและเพิ่มสินค้า</button>
-                </div>
-            </form>
-        </section>
-
-        <hr class="divider">
-
         <!-- ส่วน Grid แสดงรายการสินค้า -->
         <h2 class="section-title">รายการสินค้าทั้งหมด</h2>
         <div class="product-grid" id="productGrid">
             
+            <!-- ชิ้นที่ 1 -->
             <div class="product-card">
                 <div class="badge">ขายดี</div>
                 <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="หูฟังไร้สาย">
@@ -145,6 +101,7 @@
                 </div>
             </div>
 
+            <!-- ชิ้นที่ 2 -->
             <div class="product-card">
                 <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80" alt="นาฬิกา Smart Watch">
                 <div class="product-info">
@@ -158,6 +115,7 @@
                 </div>
             </div>
 
+            <!-- ชิ้นที่ 3 -->
             <div class="product-card">
                 <div class="badge discount">-15%</div>
                 <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80" alt="รองเท้าผ้าใบ">
@@ -172,8 +130,80 @@
                 </div>
             </div>
 
+            <!-- ชิ้นที่ 4 -->
+            <div class="product-card">
+                <div class="badge" style="background-color: #2563eb;">มาใหม่</div>
+                <img src="https://images.unsplash.com/photo-1507764923504-cd90bf7da772?w=500&q=80" alt="คีย์บอร์ดกลไก">
+                <div class="product-info">
+                    <span class="category">Gadget</span>
+                    <h3 class="product-title">Mechanical Gaming Keyboard</h3>
+                    <p class="description">คีย์บอร์ดกลไกพร้อมไฟ RGB ปรับแต่งได้ตามใจชอบ กดนุ่มตอบสนองไว</p>
+                    <div class="price-container">
+                        <span class="price">฿3,290</span>
+                        <a href="product-detail.html" class="btn-add" style="text-decoration:none;">ดูรายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ชิ้นที่ 5 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=500&q=80" alt="น้ำหอม">
+                <div class="product-info">
+                    <span class="category">Beauty</span>
+                    <h3 class="product-title">น้ำหอม Eau De Parfum 50ml</h3>
+                    <p class="description">กลิ่นหอมสดชื่นเย้ายวน ติดทนนานตลอดวัน เหมาะสำหรับทุกโอกาส</p>
+                    <div class="price-container">
+                        <span class="price">฿2,150</span>
+                        <a href="product-detail.html" class="btn-add" style="text-decoration:none;">ดูรายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ชิ้นที่ 6 -->
+            <div class="product-card">
+                <div class="badge discount">-20%</div>
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500&q=80" alt="กล้องโพลารอยด์">
+                <div class="product-info">
+                    <span class="category">Gadget</span>
+                    <h3 class="product-title">กล้องอินสแตนท์ Vintage Camera</h3>
+                    <p class="description">ถ่ายภาพแล้วรับรูปได้ทันที ดีไซน์คลาสสิก ใช้งานง่าย พกพาสะดวก</p>
+                    <div class="price-container">
+                        <span class="price">฿2,790</span>
+                        <a href="product-detail.html" class="btn-add" style="text-decoration:none;">ดูรายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
+
+    <!-- ส่วน Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>MyStore</h3>
+                <p>ศูนย์รวมสินค้าออนไลน์คุณภาพเยี่ยม ไอที แฟชั่น และไลฟ์สไตล์ที่คุณชื่นชอบ พร้อมบริการจัดส่งถึงบ้าน</p>
+            </div>
+            <div class="footer-col">
+                <h4>ลิงก์ด่วน</h4>
+                <ul>
+                    <li><a href="index.html">หน้าแรก/สินค้า</a></li>
+                    <li><a href="menu.html">เมนูหมวดหมู่</a></li>
+                    <li><a href="product-detail.html">รายละเอียดสินค้า</a></li>
+                    <li><a href="register.html">ลงทะเบียน</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ติดต่อเรา</h4>
+                <p>อีเมล: support@mystore.com</p>
+                <p>โทร: 02-123-4567</p>
+                <p>เวลาทำการ: จันทร์ - ศุกร์ (09.00 - 18.00 น.)</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MyStore. All Rights Reserved.</p>
+        </div>
+    </footer>
 
     <script>
         // เปิด-ปิด Dropdown Login
@@ -191,51 +221,18 @@
             }
         });
 
-        // เพิ่มสินค้าใหม่
-        const form = document.getElementById('addProductForm');
-        const productGrid = document.getElementById('productGrid');
+        // Banner Slider
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
 
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const category = document.getElementById('category').value;
-            const price = parseFloat(document.getElementById('price').value).toLocaleString();
-            const image = document.getElementById('image').value;
-            const desc = document.getElementById('desc').value;
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
 
-            const newCard = document.createElement('div');
-            newCard.className = 'product-card';
-            newCard.innerHTML = `
-                <div class="badge" style="background-color: #2563eb;">มาใหม่</div>
-                <img src="${image}" alt="${name}" onerror="this.src='https://via.placeholder.com/500x300?text=No+Image'">
-                <div class="product-info">
-                    <span class="category">${category}</span>
-                    <h3 class="product-title">${name}</h3>
-                    <p class="description">${desc}</p>
-                    <div class="price-container">
-                        <span class="price">฿${price}</span>
-                        <a href="product-detail.html" class="btn-add" style="text-decoration:none;">ดูรายละเอียด</a>
-                    </div>
-                </div>
-            `;
-
-            productGrid.prepend(newCard);
-            form.reset();
-            alert('เพิ่มสินค้าเรียบร้อยแล้ว!');
-        });
+        // สไลด์เปลี่ยนรูปอัตโนมัติทุกๆ 3.5 วินาที
+        setInterval(nextSlide, 3500);
     </script>
-<script>
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
-
-    function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
-    }
-
-    // สไลด์เปลี่ยนรูปอัตโนมัติทุกๆ 3.5 วินาที
-    setInterval(nextSlide, 3500);
-</script>
 </body>
 </html>
